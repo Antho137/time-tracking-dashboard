@@ -1,0 +1,285 @@
+body {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    min-height: 100vh;  
+    background: hsl(226, 43%, 10%);
+}
+
+#first, #second {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    color: #fff;
+}
+
+#report, #period {
+    padding: 0;
+}
+
+#report img {
+    max-width: 20%;
+    height: auto;
+    margin: 0 20px 10px 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+    background-color: hsl(246, 80%, 60%);
+}
+
+.intro p {
+    line-height: 1;
+    vertical-align: middle;
+    color: hsl(236, 100%, 87%);
+}
+
+.intro span {
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.introperiod {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0;
+    border-radius: 0 0 10px 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.introperiod button {
+    border: none;
+    text-align: left;
+    font-size: .75rem;
+    font-weight: 300;
+    margin: 0 0 20px;
+    cursor: pointer;
+    color: hsl(236, 100%, 87%);
+    background-color: transparent;
+}
+
+.introperiod button:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+#period {
+    display: flex;
+    flex-direction: column;
+}
+
+#period .image {
+    position: relative;
+    right: 0;
+    display: block;
+    margin-left: auto;
+    z-index: 1;
+}
+
+.cardperiod {
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.cardperiod:hover {
+    background-color: hsl(235, 45%, 61%);
+}
+
+.cardperiod .title {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.cardperiod img {
+    float: right;
+    max-width: 20%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.cardperiod img:hover {
+    cursor: pointer;
+}
+
+#workperiod, #playperiod, #studyperiod, #exerciseperiod, #socialperiod, #selfcareperiod {
+    padding: 0;
+}
+
+#work, #play, #study, #exercise, #social, #self-care {
+    margin-top: 20px;
+    z-index: -3;
+    border-radius: 10px 10px 0 0;
+}
+
+#work, #play, #study {
+    margin-bottom: -40px;
+}
+
+#exercise {
+    margin-bottom: -20px;
+    background-color: hsl(145, 58%, 55%);
+}
+
+#social {
+    margin-bottom: -65px;
+    background-color: hsl(264, 64%, 52%);
+}
+
+#self-care {
+    margin-bottom: -32px;
+    background-color: hsl(43, 84%, 65%);
+}
+
+#work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+#play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+#study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+#workweekly, #workmonthly, #playweekly, #playmonthly, #studyweekly, #studymonthly,  #exerciseweekly, #exercisemonthly, #socialweekly, #socialmonthly, #selfcareweekly, #selfcaremonthly {
+    display: flex;
+    flex-direction: row;
+    display: none;
+}
+
+.time {
+    margin-top: 0;
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+.period {
+    float: right;
+    font-size: .875rem;
+    font-weight: 300;
+    margin-top: 17px;
+    color: hsl(236, 100%, 87%);
+}
+
+#footer .attribution {
+    text-align: center;
+    font-size: .875rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        margin: 120px auto 0;
+    }
+
+    #report {
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        color: #fff;
+    }
+
+    #report img {
+        max-width: 50%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .intro, .introperiod {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro {
+        padding-bottom: 70px;
+    }
+
+    .intro p {
+        line-height: normal;
+        font-size: .75rem;
+        font-weight: 300;
+    }
+    
+    .intro span {
+        margin-top: 20px;
+        font-size: 1.875rem;
+        font-weight: 300;
+    }
+
+    .introperiod {
+        padding-bottom: 15px;
+    }
+
+    .introperiod p {
+        margin-bottom: 15px;
+        font-size: .875rem;
+        font-weight: 300;
+    } 
+
+    #period {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    #work, #play, #study, #exercise, #social, #self-care {
+        margin-top: 0;
+    }    
+
+    #workperiod, #playperiod, #studyperiod, #exerciseperiod, #socialperiod, #selfcareperiod {
+        padding: 10px 10px 0;
+    }
+
+    .time {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .period {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #footer {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    #main {
+        margin: 170px auto 0;
+    }
+
+    .period {
+        padding-bottom: 10px;
+    }
+
+    #footer {
+        margin-top: 50px;
+    }
+}

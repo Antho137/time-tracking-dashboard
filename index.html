@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+			<div class="row justify-content-sm-center" id="first">
+        <main class="col-sm-8 offset-sm-2 col-md-12 offset-md-0 col-lg-10 offset-1 col-xl-8 offset-xl-2" id="main">
+          <div class="col-md-3" id="report">
+            <div class="intro">
+              <img src="./images/image-jeremy.png" alt="Jeremy" />
+              <p>Report for<br/>
+                <span>Jeremy Robson</span>
+              </p>
+            </div>
+            <div class="introperiod">
+              <button id="daily" type="button">Daily</button>
+              <button id="weekly" type="button">Weekly</button>
+              <button id="monthly" type="button">Monthly</button>
+            </div>
+          </div>
+          <div class="col-md-9" id="period">
+            <div class="col-md-4" id="workperiod">
+              <div id="work">
+                <img src="./images/icon-work.svg" class="image" alt="icon-work" />
+              </div>
+              <div class="cardperiod">
+                <p><span class="title">Work</span><img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" /></p>
+                <div id="workdaily">
+                  <span class="time">5hrs</span>
+                  <span class="period">Yesterday - 7hrs</span>
+                </div>
+                <div id="workweekly">
+                  <span class="time">32hrs</span>
+                  <span class="period">Last Week - 36hrs</span>
+                </div>
+                <div id="workmonthly">
+                  <span class="time">103hrs</span>
+                  <span class="period">Last Month - 128hrs</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="playperiod">
+              <div id="play">
+                <img src="./images/icon-play.svg" class="image" alt="icon-play" />
+              </div>
+              <div class="cardperiod">
+                <p><span class="title">Play</span><img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" /></p>
+                <div id="playdaily">
+                  <span class="time">1hr</span>
+                  <span class="period">Yesterday - 2hrs</span>
+                </div>
+                <div id="playweekly">
+                  <span class="time">10hrs</span>
+                  <span class="period">Last Week - 8hrs</span>
+                </div>
+                <div id="playmonthly">
+                  <span class="time">23hrs</span>
+                  <span class="period">Last Month - 29hrs</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="studyperiod">
+              <div id="study">
+                <img src="./images/icon-study.svg" class="image" alt="icon-study" />
+              </div>
+              <div class="cardperiod">
+                <p><span class="title">Study</span><img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" /></p>
+                <div id="studydaily">
+                  <span class="time">0hrs</span>
+                  <span class="period">Yesterday - 1hr</span>
+                </div>
+                <div id="studyweekly">
+                  <span class="time">4hrs</span>
+                  <span class="period">Last Week - 7hrs</span>
+                  </div>
+                <div id="studymonthly">
+                  <span class="time">13hrs</span>
+                  <span class="period">Last Month - 19hrs</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="exerciseperiod">
+              <div id="exercise">
+                <img src="./images/icon-exercise.svg" class="image" alt="icon-exercise" />
+              </div>
+              <div class="cardperiod">
+                <p><span class="title">Exercise</span><img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" /></p>
+                <div id="exercisedaily">
+                  <span class="time">5hrs</span>
+                  <span class="period">Yesterday - 7hrs</span>
+                </div>
+                <div id="exerciseweekly">
+                  <span class="time">32hrs</span>
+                  <span class="period">Last Week - 36hrs</span>
+                </div>
+                <div id="exercisemonthly">
+                  <span class="time">103hrs</span>
+                  <span class="period">Last Month - 128hrs</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="socialperiod">
+              <div id="social">
+                <img src="./images/icon-social.svg" class="image" alt="icon-social" />
+              </div>
+              <div class="cardperiod">
+                <p><span class="title">Social</span><img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" /></p>
+                <div id="socialdaily">
+                  <span class="time">1hr</span>
+                  <span class="period">Yesterday - 3hrs</span>
+                </div>
+                <div id="socialweekly">
+                  <span class="time">5hrs</span>
+                  <span class="period">Last Week - 10hrs</span>
+                </div>
+                <div id="socialmonthly">
+                  <span class="time">21hrs</span>
+                  <span class="period">Last Month - 23hrs</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" id="selfcareperiod">
+              <div id="self-care">
+                <img src="./images/icon-self-care.svg" class="image" alt="icon-self-care" />
+              </div>
+              <div class="cardperiod">
+                <p><span class="title">Self-Care</span><img src="./images/icon-ellipsis.svg" alt="icon-ellipsis" /></p>
+                <div id="selfcaredaily">
+                  <span class="time">0hrs</span>
+                  <span class="period">Yesterday - 1hr</span>
+                </div>
+                <div id="selfcareweekly">
+                  <span class="time">2hrs</span>
+                  <span class="period">Last Week - 2hrs</span>
+                </div>
+                <div id="selfcaremonthly">
+                  <span class="time">7hrs</span>
+                  <span class="period">Last Month - 11hrs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+			<div class="row justify-content-sm-center" id="second">
+        <footer class="col-sm-12 col-xl-8 offset-xl-2" id="footer">
+          <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.&#160; Coded by <a href="">Antonio Sala</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
