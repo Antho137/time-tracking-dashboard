@@ -1,6 +1,6 @@
 # Frontend Mentor - Time tracking dashboard
 
-<img src="./images/desktop-preview.png" alt="desktop-preview">
+<img src="./images/desktop-preview.jpg" alt="desktop-preview">
 
 ## Table of contents
 
